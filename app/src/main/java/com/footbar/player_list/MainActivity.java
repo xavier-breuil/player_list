@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         this.controller = new Controller(this);
 
         //add the spinners to the spinner list
@@ -31,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
         this.spinner_list.add(0,(Spinner)findViewById(R.id.meteor_spinner_3));
         this.spinner_list.add(0,(Spinner)findViewById(R.id.meteor_spinner_2));
         this.spinner_list.add(0,(Spinner)findViewById(R.id.meteor_spinner_1));
-
-        this.display_player_names();
     }
 
     public void display_player_names(){
@@ -45,5 +41,5 @@ public class MainActivity extends AppCompatActivity {
             this.spinner_list.get(i).setAdapter(adapter);
         }
     }
-
 }
+
