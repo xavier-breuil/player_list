@@ -26,7 +26,6 @@ public class HttpClient {
             con.setReadTimeout(readTimeOut);
             con.setConnectTimeout(connectTimeOut);
             con.setDoInput(true);
-
             con.connect();
 
             // read the response
